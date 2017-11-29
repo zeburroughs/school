@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <form name="myform">
+
+  <table>
+    <tr>
+      <td colspan="4"><input type="text" name="myinput" onkeydown="allowFloatsOnly(event)"></td>
+    </tr>
+    <tr>
+      <td><button type="button" onclick="document.myform.myinput.value = ''">AC</button></td>
+      <td></td>
+      <td></td>
+      <td><button type="button" onclick="document.myform.myinput.value = calculate(parse(document.myform.myinput.value))">=</button></td>
+    </tr>
+     <tr>
+       <td><button type="button" onclick="document.myform.myinput.value += '7'">7</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '8'">8</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '9'">9</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '/'">/</button></td>
+     </tr>
+     <tr>
+       <td><button type="button" onclick="document.myform.myinput.value += '4'">4</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '5'">5</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '6'">6</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '*'">*</button></td>
+     </tr>
+     <tr>
+       <td><button type="button" onclick="document.myform.myinput.value += '1'">1</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '2'">2</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '3'">3</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '-'">-</button></td>
+     </tr>
+     <tr>
+       <td colspan="2"><button type="button" onclick="document.myform.myinput.value += '0'">0</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '.'">.</button></td>
+       <td><button type="button" onclick="document.myform.myinput.value += '+'">+</button></td>
+     </tr>
+   </table>
+ </form>
+
+  </body>
+  <script src="calculate.js"></script>
+</html>

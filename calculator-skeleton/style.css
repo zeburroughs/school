@@ -1,0 +1,15 @@
+button {
+    width: 100%;
+    padding: 20px;
+}
+td {
+    width: 25%;
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 18px;
+    text-align: right;
+}

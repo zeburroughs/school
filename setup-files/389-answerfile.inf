@@ -1,0 +1,25 @@
+[General]
+FullMachineName= hostname.example.com
+SuiteSpotUserID= nobody
+SuiteSpotGroup= nobody
+AdminDomain= example.com
+ConfigDirectoryAdminID= admin
+ConfigDirectoryAdminPwd= password
+ConfigDirectoryLdapURL= ldap://yourldapserveraddress:389/o=NetscapeRoot
+
+[slapd]
+SlapdConfigForMC= yes
+UseExistingMC= 0
+ServerPort= 389
+ServerIdentifier= dir
+Suffix= dc=example,dc=com
+RootDN= cn=Directory Manager
+RootDNPwd= password
+ds_bename=exampleDB
+AddSampleEntries= No
+
+[admin]
+Port= 9830
+ServerIpAddress= 10.1.0.214
+ServerAdminID= admin
+ServerAdminPwd= admin
